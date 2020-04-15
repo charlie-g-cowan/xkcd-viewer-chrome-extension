@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>xkcd viewer</title>
+    <script src="jquery.min.js"></script>
+    <style>
+      body {
+        min-width: 365px;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        margin: 4px 0;
+        font-variant: small-caps;
+        font-family: Lucida,Helvetica,sans-serif;
+        font-weight: 700;
+      }
+
+      #comic {
+        float: left;
+      }
+
+      #search {
+        float: right;
+      }
+
+      #comicinfo {
+        margin-left: 12px;
+      }
+
+      button {
+        background-color: #6E7B91;
+        color: #FFF;
+        border: 1.5px solid #333;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 1.5px 12px;
+        margin: 0 4px;
+        text-decoration: none;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        box-shadow: 0 0 5px 0 gray;
+        -webkit-box-shadow: 0 0 5px 0 gray;
+        font-variant: small-caps;
+        font-family: Lucida,Helvetica,sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: #6E7B91;
+        background-color: #FFF;
+      }
+
+      input {
+        border: 1.5px solid #333;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 1.5px 12px;
+        margin: 4px;
+        text-decoration: none;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        width: 258px;
+        box-sizing: border-box;
+      }
+
+      #searchsubmit, #changesubmit {
+        width: 80px;
+        margin: 4px;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+
+      h2.error {
+         margin: 4px;
+        font-variant: small-caps;
+        font-family: Lucida,Helvetica,sans-serif;
+        font-weight: 700;
+      }
+
+      p.error {
+          margin: 4px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="search">
+      <input id='comicchange' placeholder='comic id'>
+      <button id='changesubmit'>Go</button>
+      <br>
+      <button id='first'>|<</button>
+      <button id='prev'>< Prev</button>
+      <button id='random'>Random</button>
+      <button id='next'>Next ></button>
+      <button id='last'>>|</button>
+      <br>
+      <input id='searchxkcd' placeholder='search on explain xkcd'>
+      <button id='searchsubmit'>Search</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
